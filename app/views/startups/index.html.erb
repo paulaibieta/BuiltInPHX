@@ -1,0 +1,21 @@
+<div class="jumbotron text-center">
+
+  <h1>Built In PHX</h1>
+
+  <p>A directory of tech startups in Phoenix</p>
+
+  <div class="container>">
+    <ul class="list-group">
+    <% @startups.approved.each do |startup| %>
+      <li class="list-group-item">
+        <%= startup.name %>
+        <%= startup.description %>
+      </li>  
+    <% end %>
+    </ul>
+  </div>
+
+</div>  
+
+
+
