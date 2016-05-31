@@ -14,6 +14,10 @@ class StartupsController < ApplicationController
     render "show"
   end 
 
+  def update
+    @startup = Startup.update startup_params
+  end 
+
   def show
     @startup = Startup.find params[:id]
   end 
@@ -21,7 +25,7 @@ class StartupsController < ApplicationController
   private
 
   def startup_params
-    params.require(:startup).permit(:name, :description, :id)
+    params.require(:startup).permit(:name, :description, :approved, :id)
   end 
 
 end 
