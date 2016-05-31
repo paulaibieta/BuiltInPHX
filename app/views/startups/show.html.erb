@@ -1,4 +1,14 @@
-<%= @startup.name %>
-<%= @startup.description %>
+<div class="container">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><%= @startup.name %></h3>
+  </div>
+  <div class="panel-body">
+    <%= @startup.description %>
+    <%= image_tag @startup.company_image.url %>
+  </div>
+</div>
 
-<%= link_to "See All Startups", root_path %>
+<%= link_to "See All Startups", root_path, class: "btn btn-success" %>
+
+</div>

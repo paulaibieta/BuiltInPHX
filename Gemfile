@@ -27,6 +27,8 @@ gem 'bootstrap-sass', '~> 3.3.6'
 
 gem 'activeadmin', github: 'activeadmin'
 
+gem "paperclip", "~> 5.0.0.beta1"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
