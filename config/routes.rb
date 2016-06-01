@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
 
   ActiveAdmin.routes(self)
-  resources :startups 
+
+  resources :startups do 
+    collection do 
+      get "list"
+    end 
+  end   
   
   root "startups#index"
 

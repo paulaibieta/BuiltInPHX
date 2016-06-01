@@ -22,6 +22,10 @@ class StartupsController < ApplicationController
     @startup = Startup.find params[:id]
   end 
 
+  def list
+    @startups = Startup.all.order("name")
+  end 
+
   private
 
   def startup_params

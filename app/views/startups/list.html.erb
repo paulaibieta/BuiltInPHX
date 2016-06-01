@@ -1,0 +1,5 @@
+<h3>List of Startups by Name</h3>
+
+  <% @startups.approved.each do |startup| %>
+    <%= link_to startup.name, startup_path(startup) %><br>
+  <% end %>
