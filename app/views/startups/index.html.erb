@@ -8,7 +8,7 @@
     <% @startups.approved.each do |startup| %>
     <div class="col-sm-6 col-md-4">
       <div class="thumbnail">
-        <%= image_tag startup.company_image(:medium) %>
+        <%= image_tag startup.company_image(:medium), class: "image-show-page img-reponsive" %>
         <div class="caption">
           <h3><%= startup.name %><h3>
           <p><%= startup.description %></p>
