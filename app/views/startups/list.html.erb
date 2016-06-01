@@ -1,5 +1,16 @@
-<h3>List of Startups by Name</h3>
+<div class="container">
+  <div class="panel panel-success">
 
-  <% @startups.approved.each do |startup| %>
-    <%= link_to startup.name, startup_path(startup) %><br>
-  <% end %>
+    <div class="panel-heading">
+      <h3 class="panel-title">List of Startups by Name</h3>
+    </div>  
+   
+    <div class="panel-body">
+      <% @startups.approved.each do |startup| %>
+        <%= link_to startup.name, startup_path(startup) %><br>
+      <% end %>
+
+    </div>
+
+  </div>  
+</div>

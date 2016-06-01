@@ -1,11 +1,14 @@
 <div class="container">
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title"><%= @startup.name %></h3>
+    <h4 class="panel-title"><%= @startup.name %></h4>
   </div>
   <div class="panel-body">
-    <%= @startup.description %>
-    <%= image_tag @startup.company_image.url, class: "image-show-page img-responsive" %>
+    <div class="well text-center">
+    <%= image_tag @startup.company_image.url, class: "image-show-page img-responsive" %><br>
+    
+      <h4><strong>Mission Statement: </strong></h4>"<em><%= @startup.description %></em>"
+    </div> 
   </div>
 </div>
 

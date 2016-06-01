@@ -1,8 +1,16 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.image-show-page {
+.image-index-page {
   max-width: 400px;
   max-height: 250px;
+  object-fit: contain;
+}
+
+.image-show-page {
+  max-width: 650px;
+  max-height: 500px;
+  margin-left: auto;
+  margin-right: auto;
   object-fit: contain;
 }
